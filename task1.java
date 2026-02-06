@@ -28,7 +28,8 @@ public class task1 {
             double subtotal = price1+price2+price3+price4+price5;
             double discountamount = subtotal * 0.1;
             double withouttax = subtotal - discountamount;
-            double invoice = withouttax + 5;
+            double salestax = withouttax * 0.05;
+            double invoice = withouttax + salestax;
 
             System.out.println("Subtotal : " + subtotal);
             System.out.println("Discount percent : 10");
